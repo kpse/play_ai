@@ -14,6 +14,9 @@
 		ABC29CE129C55E1600D7AC8B /* playAITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABC29CE029C55E1600D7AC8B /* playAITests.swift */; };
 		ABC29CEB29C55E1600D7AC8B /* playAIUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABC29CEA29C55E1600D7AC8B /* playAIUITests.swift */; };
 		ABC29CED29C55E1600D7AC8B /* playAIUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABC29CEC29C55E1600D7AC8B /* playAIUITestsLaunchTests.swift */; };
+		ABC29CFA29C55EED00D7AC8B /* ChatBubbleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABC29CF929C55EED00D7AC8B /* ChatBubbleView.swift */; };
+		ABC29CFF29C5B64E00D7AC8B /* OpenAI.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABC29CFE29C5B64E00D7AC8B /* OpenAI.swift */; };
+		ABC29D0429C5D26B00D7AC8B /* Keys.plist in Resources */ = {isa = PBXBuildFile; fileRef = ABC29D0029C5CE1F00D7AC8B /* Keys.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +48,9 @@
 		ABC29CE629C55E1600D7AC8B /* playAIUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = playAIUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		ABC29CEA29C55E1600D7AC8B /* playAIUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = playAIUITests.swift; sourceTree = "<group>"; };
 		ABC29CEC29C55E1600D7AC8B /* playAIUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = playAIUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		ABC29CF929C55EED00D7AC8B /* ChatBubbleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatBubbleView.swift; sourceTree = "<group>"; };
+		ABC29CFE29C5B64E00D7AC8B /* OpenAI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenAI.swift; sourceTree = "<group>"; };
+		ABC29D0029C5CE1F00D7AC8B /* Keys.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Keys.plist; path = "/Users/Louis.Suo/repo/new-ai-app/playAI/Keys.plist"; sourceTree = "<absolute>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,6 +81,7 @@
 		ABC29CC229C55E1400D7AC8B = {
 			isa = PBXGroup;
 			children = (
+				ABC29D0029C5CE1F00D7AC8B /* Keys.plist */,
 				ABC29CCD29C55E1400D7AC8B /* playAI */,
 				ABC29CDF29C55E1600D7AC8B /* playAITests */,
 				ABC29CE929C55E1600D7AC8B /* playAIUITests */,
@@ -100,6 +107,8 @@
 				ABC29CD229C55E1600D7AC8B /* Assets.xcassets */,
 				ABC29CD729C55E1600D7AC8B /* playAI.entitlements */,
 				ABC29CD429C55E1600D7AC8B /* Preview Content */,
+				ABC29CF929C55EED00D7AC8B /* ChatBubbleView.swift */,
+				ABC29CFE29C5B64E00D7AC8B /* OpenAI.swift */,
 			);
 			path = playAI;
 			sourceTree = "<group>";
@@ -145,6 +154,8 @@
 			dependencies = (
 			);
 			name = playAI;
+			packageProductDependencies = (
+			);
 			productName = playAI;
 			productReference = ABC29CCB29C55E1400D7AC8B /* playAI.app */;
 			productType = "com.apple.product-type.application";
@@ -192,6 +203,9 @@
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
+				KnownAssetTags = (
+					New,
+				);
 				LastSwiftUpdateCheck = 1420;
 				LastUpgradeCheck = 1420;
 				TargetAttributes = {
@@ -217,6 +231,8 @@
 				Base,
 			);
 			mainGroup = ABC29CC229C55E1400D7AC8B;
+			packageReferences = (
+			);
 			productRefGroup = ABC29CCC29C55E1400D7AC8B /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -233,6 +249,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ABC29D0429C5D26B00D7AC8B /* Keys.plist in Resources */,
 				ABC29CD629C55E1600D7AC8B /* Preview Assets.xcassets in Resources */,
 				ABC29CD329C55E1600D7AC8B /* Assets.xcassets in Resources */,
 			);
@@ -259,8 +276,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ABC29CFA29C55EED00D7AC8B /* ChatBubbleView.swift in Sources */,
 				ABC29CD129C55E1400D7AC8B /* ContentView.swift in Sources */,
 				ABC29CCF29C55E1400D7AC8B /* playAIApp.swift in Sources */,
+				ABC29CFF29C5B64E00D7AC8B /* OpenAI.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
